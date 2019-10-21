@@ -10,12 +10,15 @@
 
 <a-scene embedded arjs>
 
+	<a-marker-camera preset="cafe">
+
 	<a-marker type="pattern" preset="custom" url="pattern-marker.patt">
 
-<a-entity gltf-model="url(https://cdn.jsdelivr.net/gh/bac0nman/cafe@master/scene.gltf)" scale="0.1 0.1 0.1" rotation="0 0 0"></a-entity>
+<a-entity gltf-model="url(https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models@master/2.0/Avocado/glTF/Avocado.gltfs)" scale="0.1 0.1 0.1" rotation="0 0 0"></a-entity>
 
+<a-image src="marker.png" position="0 0 0" width="1" rotation="0 -45 0"></a-image>
 
-</a-marker>
+</a-marker-camera>
 
 <a-entity camera></a-entity>
 
